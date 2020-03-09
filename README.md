@@ -21,6 +21,10 @@ In this repository I followed the instructor's videos to create a simple price t
 - encrypting password using passlib  
 - use js from Bootstrap to make a navigation bar  
 - using Mailgun's api to send email notification  
+- deploying app on heroku  
 
-I am still working on deployment on Heroku and Digital Ocean.  
+**Heroku**  
+I had difficulties to do `pipenv lock` because I was not able to install uwsgi successfully using pipenv. I decided to remove Pipfile and Pipfile.lock from my remote repo and add the required packages in requirements.txt.  
+Try my price tracking app out at https://pricing-service-zij212.herokuapp.com/  
 
+I am still working on deployment on Digital Ocean. 
