@@ -6,7 +6,7 @@ from typing import Dict
 
 class Database(object):
     URI = os.environ.get("MONGODB_URI")
-    DATABASE = pymongo.MongoClient(f"{URI}&retryWrites=false").get_default_database()
+    DATABASE = pymongo.MongoClient(URI, retryWrites=False).get_default_database()
 
     @staticmethod
     def insert(collection: str, data: Dict):
